@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CardComponent from "../../collections/Card/Card"
 
 import {
   StyledContainerMain,
@@ -14,6 +15,7 @@ export const AgencySelection = ({ image, title, description, ...props }) => {
       <StyledTextContainer>
         <StyledTitleBig>{title}</StyledTitleBig>
         <StyledTitleSmall>{description}</StyledTitleSmall>
+        <CardComponent />
         <StyledImageContainer>
           <Image
             layout="responsive"
