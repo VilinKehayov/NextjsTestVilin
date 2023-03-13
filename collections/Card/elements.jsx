@@ -19,6 +19,7 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   width: 30%;
   margin-left: 10rem;
   font-family: sans-serif;
+  background: #D3D3D3;
 `;
 
 export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)`
