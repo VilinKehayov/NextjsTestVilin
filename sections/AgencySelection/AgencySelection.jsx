@@ -1,5 +1,24 @@
 import Image from "next/image";
-import CardComponent from "../../collections/Card/Card"
+import { CardComponent } from "../../collections/Card/Card";
+
+const CardComponentProps1 = {
+  image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
+  title: "Brief",
+  description:
+    "Complete brief writing and or simple guidance on what to include, we've got you coverted.",
+};
+const CardComponentProps2 = {
+  image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
+  title: "Search",
+  description:
+    "In-depth agency search covering;criteria matching, door knocking and due dilligence vetting.",
+};
+const CardComponentProps3 = {
+  image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
+  title: "Pitch",
+  description:
+    "Comprehensive pitch management, including comms, diary management and pitch hosting.",
+};
 
 import {
   StyledContainerMain,
@@ -15,7 +34,9 @@ export const AgencySelection = ({ image, title, description, ...props }) => {
       <StyledTextContainer>
         <StyledTitleBig>{title}</StyledTitleBig>
         <StyledTitleSmall>{description}</StyledTitleSmall>
-        <CardComponent />
+        <CardComponent {...CardComponentProps1} />
+        <CardComponent {...CardComponentProps2} />
+        <CardComponent {...CardComponentProps3} />
         <StyledImageContainer>
           <Image
             layout="responsive"
