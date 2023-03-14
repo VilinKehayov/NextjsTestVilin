@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CardComponent } from "../../collections/Card/Card";
+import { StyledContainer } from "../../collections/Card/elements";
 
 const CardComponentProps1 = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
@@ -26,6 +27,8 @@ import {
   StyledTitleSmall,
   StyledTextContainer,
   StyledImageContainer,
+  StyledContainerCard,
+  StyledContainerSecondMain,
 } from "./elements";
 
 export const AgencySelection = ({ image, title, description, ...props }) => {
@@ -34,9 +37,8 @@ export const AgencySelection = ({ image, title, description, ...props }) => {
       <StyledTextContainer>
         <StyledTitleBig>{title}</StyledTitleBig>
         <StyledTitleSmall>{description}</StyledTitleSmall>
-        <CardComponent {...CardComponentProps1} />
-        <CardComponent {...CardComponentProps2} />
-        <CardComponent {...CardComponentProps3} />
+      </StyledTextContainer>
+      <StyledContainerSecondMain {...props}>
         <StyledImageContainer>
           <Image
             layout="responsive"
@@ -46,7 +48,12 @@ export const AgencySelection = ({ image, title, description, ...props }) => {
             height={image.height}
           />
         </StyledImageContainer>
-      </StyledTextContainer>
+        <StyledContainerCard {...props}>
+          <CardComponent {...CardComponentProps1} />
+          <CardComponent {...CardComponentProps2} />
+          <CardComponent {...CardComponentProps3} />
+        </StyledContainerCard>
+      </StyledContainerSecondMain>
     </StyledContainerMain>
   );
 };
