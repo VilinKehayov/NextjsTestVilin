@@ -10,10 +10,11 @@ export const StyledContainer = styled(({ height, ...props }) => <SectionContaine
 export const StyledTitleBold = styled((props) => <SectionBigHeading {...props} />)`
   margin: 0;
   color: black;
+  font-size: 1.5rem;
 `;
 
 export const StyledDescriptionSmall = styled((props) => <SectionSubheading {...props} />)`
-  margin: 1.3 0 0;
+margin: 0;
 `;
 
 export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
@@ -25,5 +26,5 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
 `;
 
 export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)`
-margin: 20px 27px 29px;
+margin: 45px 27px 29px;
 `;
