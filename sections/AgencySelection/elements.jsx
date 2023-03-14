@@ -27,14 +27,14 @@ text-align: center;
 export const StyledImageContainer = styled(({...props})=> <div {...props} />)`
 max-width: 15rem;
 max-height: 65rem;
-width: 70%
-height: 70%
+width: 70%;
+height: 70%;
 margin-left: auto;
 `;
 
 export const StyledContainerCard = styled(({height, ...props}) => <SectionContainer {...props} />)`
 flex-direction: column;
-width: 60%
+width: 60%;
 
 
 `;
