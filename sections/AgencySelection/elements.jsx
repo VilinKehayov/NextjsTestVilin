@@ -10,11 +10,13 @@ background-image: url("img/background.png")
 export const StyledTitleBig = styled((props) => <SectionBigHeading {...props} />)`
 margin: 20px 0 0 0;
 color: black;
+font-size: 4.5rem;
 `;
 
 export const StyledTitleSmall = styled((props)=> <SectionSubheading {...props} />)`
-margin: 0;
+margin: 19px 0 0 0;
 text-align: center;
+font-size: 2.2rem;
 `;
 
 export const StyledTextContainer = styled(({...props})=> <div {...props} />)`
@@ -39,7 +41,7 @@ margin-left: auto;
 export const StyledContainerCard = styled(({height, ...props}) => <SectionContainer {...props} />)`
 flex-direction: column;
 width: 60%;
-margin: 50px 
+margin: 50px 50px 50px 50px;
 
 
 `;
