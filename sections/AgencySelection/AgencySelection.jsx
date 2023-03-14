@@ -1,25 +1,5 @@
 import Image from "next/image";
 import { CardComponent } from "../../collections/Card/Card";
-import { StyledContainer } from "../../collections/Card/elements";
-
-const CardComponentProps1 = {
-  image: { src: "/img/card1img.png", alt: "", width: 65, height: 65 },
-  title: "Brief",
-  description:
-    "Complete brief writing and or simple guidance on what to include, we've got you coverted.",
-};
-const CardComponentProps2 = {
-  image: { src: "/img/card2img.png", alt: "", width: 65, height: 65},
-  title: "Search",
-  description:
-    "In-depth agency search covering;criteria matching, door knocking and due dilligence vetting.",
-};
-const CardComponentProps3 = {
-  image: { src: "/img/card3img.png", alt: "", width: 65, height: 65 },
-  title: "Pitch",
-  description:
-    "Comprehensive pitch management, including comms, diary management and pitch hosting.",
-};
 
 import {
   StyledContainerMain,
@@ -29,7 +9,40 @@ import {
   StyledImageContainer,
   StyledContainerCard,
   StyledContainerSecondMain,
+  StyledCardComponent,
 } from "./elements";
+
+const CardComponentProps1 = {
+  image: { src: "/img/card1img.png", alt: "", width: 65, height: 65 },
+  title: "Brief",
+  description: (
+    <p>
+      Complete <strong> brief writing and or simple guidance </strong> on what
+      to include, we've got you coverted.
+    </p>
+  ),
+};
+const CardComponentProps2 = {
+  image: { src: "/img/card2img.png", alt: "", width: 65, height: 65 },
+  title: "Search",
+  description: (
+    <p>
+      "In-depth agency search covering; <strong>criteria matching</strong>, door
+      knocking and due dilligence vetting."
+    </p>
+  ),
+};
+const CardComponentProps3 = {
+  image: { src: "/img/card3img.png", alt: "", width: 65, height: 65 },
+  title: <u>Pitch</u>,
+  titleStyleProps: "color: #60baf6;",
+  description: (
+    <p>
+      "Comprehensive <strong>pitch management</strong>, including comms, diary
+      management and pitch hosting."
+    </p>
+  ),
+};
 
 export const AgencySelection = ({ image, title, description, ...props }) => {
   return (
@@ -51,7 +64,7 @@ export const AgencySelection = ({ image, title, description, ...props }) => {
         <StyledContainerCard {...props}>
           <CardComponent {...CardComponentProps1} />
           <CardComponent {...CardComponentProps2} />
-          <CardComponent {...CardComponentProps3} />
+          <StyledCardComponent {...CardComponentProps3} />
         </StyledContainerCard>
       </StyledContainerSecondMain>
     </StyledContainerMain>
