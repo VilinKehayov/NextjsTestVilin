@@ -4,6 +4,7 @@ import {SectionContainer, SectionBigHeading, SectionSubheading} from "~/componen
 export const StyledContainerMain = styled(({height, ...props}) => <SectionContainer {...props} />)`
 align-items: center;
 flex-direction: column;
+background-image: url("img/background.png")
 `;
 
 export const StyledTitleBig = styled((props) => <SectionBigHeading {...props} />)`
@@ -25,20 +26,27 @@ text-align: center;
 `;
 
 export const StyledImageContainer = styled(({...props})=> <div {...props} />)`
-max-width: 15rem;
-max-height: 65rem;
-width: 70%;
-height: 70%;
+
+max-width: 100%;
+width: 460px;
+height: 700px;
+margin-left: auto;
+
+
 margin-left: auto;
 `;
 
 export const StyledContainerCard = styled(({height, ...props}) => <SectionContainer {...props} />)`
 flex-direction: column;
 width: 60%;
+padding: 50px 0 50px 0;
+margin: 50px 
 
 
 `;
 
 export const StyledContainerSecondMain = styled(({height, ...props}) => <SectionContainer {...props} />)`
 flex-direction: row;
+margin-top: 45px;
+align-items: center;
 `;
