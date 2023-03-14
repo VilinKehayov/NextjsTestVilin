@@ -9,7 +9,7 @@ const CardComponentProps1 = {
     "Complete brief writing and or simple guidance on what to include, we've got you coverted.",
 };
 const CardComponentProps2 = {
-  image: { src: "/img/card2img.png", alt: "", width: 65, height: 65 },
+  image: { src: "/img/card2img.png", alt: "", width: 65, height: 65},
   title: "Search",
   description:
     "In-depth agency search covering;criteria matching, door knocking and due dilligence vetting.",
