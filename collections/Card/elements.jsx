@@ -16,10 +16,11 @@ export const StyledDescriptionSmall = styled((props) => <SectionSubheading {...p
 
 export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   color: black;
-  width: 30%;
+  width: 65%;
   margin-left: 10rem;
   font-family: sans-serif;
   background: #D3D3D3;
+  margin: 15px;
 `;
 
 export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)`
