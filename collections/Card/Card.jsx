@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import {
   StyledContainer,
   StyledTitleBold,
@@ -9,10 +11,12 @@ import {
 export const CardComponent = ({ image, title, description, ...props }) => {
   return (
     <StyledContainer {...props}>
+      <StyledImageContainer>
+        <Image {...image} />
+      </StyledImageContainer>
       <StyledTextContainer>
         <StyledTitleBold>{title}</StyledTitleBold>
         <StyledDescriptionSmall>{description}</StyledDescriptionSmall>
-        <StyledImageContainer></StyledImageContainer>
       </StyledTextContainer>
     </StyledContainer>
   );
