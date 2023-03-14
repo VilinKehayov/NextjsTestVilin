@@ -1,7 +1,7 @@
 import { AgencySelection } from "../sections";
 
 const AgencySelectionProps = {
-  image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
+  image: { src: "/img/video.png", alt: "", width: 1000, height: 1680 },
   title: "Managed agency selection",
   description: "Strengthen your onboarding process",
 };
