@@ -10,26 +10,27 @@ import {
   StyledContainerCard,
   StyledContainerSecondMain,
   StyledCardComponent,
+  StyledParagraph
 } from "./elements";
 
 const CardComponentProps1 = {
   image: { src: "/img/card1img.png", alt: "", width: 65, height: 65 },
   title: "Brief",
   description: (
-    <p>
+    <StyledParagraph>
       Complete <strong> brief writing and or simple guidance </strong> on what
       to include, we've got you coverted.
-    </p>
+    </StyledParagraph>
   ),
 };
 const CardComponentProps2 = {
   image: { src: "/img/card2img.png", alt: "", width: 65, height: 65 },
   title: "Search",
   description: (
-    <p>
+    <StyledParagraph>
       "In-depth agency search covering; <strong>criteria matching</strong>, door
       knocking and due dilligence vetting."
-    </p>
+    </StyledParagraph>
   ),
 };
 const CardComponentProps3 = {
@@ -37,10 +38,10 @@ const CardComponentProps3 = {
   title: <u>Pitch</u>,
   titleStyleProps: "color: #60baf6;",
   description: (
-    <p>
+    <StyledParagraph>
       "Comprehensive <strong>pitch management</strong>, including comms, diary
       management and pitch hosting."
-    </p>
+    </StyledParagraph>
   ),
 };
 
