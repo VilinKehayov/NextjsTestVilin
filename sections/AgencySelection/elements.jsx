@@ -20,6 +20,11 @@ export const StyledTitleBig = styled((props) => (
   margin: 20px 0 0 0;
   color: black;
   font-size: 3.5rem;
+
+  
+  @media (max-width: 1024px) {
+    font-size: 3.1rem;
+  }
 `;
 
 export const StyledTitleSmall = styled((props) => (
@@ -28,6 +33,10 @@ export const StyledTitleSmall = styled((props) => (
   margin: 11px 0 0 0;
   text-align: center;
   font-size: 1.9rem;
+
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
