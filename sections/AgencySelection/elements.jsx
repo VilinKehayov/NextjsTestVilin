@@ -86,3 +86,7 @@ export const StyledCardComponent = styled(CardComponent)`
   border-radius: 10px;
   padding-bottom: 10px;
 `;
+
+export const StyledParagraph = styled.p`
+margin: 0;
+`
