@@ -13,7 +13,7 @@ import {
   StyledParagraph
 } from "./elements";
 
-const CardComponentProps1 = {
+const CardComponentProps = [{
   image: { src: "/img/card1img.png", alt: "", width: 65, height: 65 },
   title: "Brief",
   description: (
@@ -21,9 +21,8 @@ const CardComponentProps1 = {
       Complete <strong> brief writing and or simple guidance </strong> on what
       to include, we've got you coverted.
     </StyledParagraph>
-  ),
-};
-const CardComponentProps2 = {
+  )},
+    {
   image: { src: "/img/card2img.png", alt: "", width: 65, height: 65 },
   title: "Search",
   description: (
@@ -31,9 +30,8 @@ const CardComponentProps2 = {
       "In-depth agency search covering; <strong>criteria matching</strong>, door
       knocking and due dilligence vetting."
     </StyledParagraph>
-  ),
-};
-const CardComponentProps3 = {
+  )},
+    {
   image: { src: "/img/card3img.png", alt: "", width: 65, height: 65 },
   title: <u>Pitch</u>,
   titleStyleProps: "color: #60baf6;",
@@ -42,8 +40,10 @@ const CardComponentProps3 = {
       "Comprehensive <strong>pitch management</strong>, including comms, diary
       management and pitch hosting."
     </StyledParagraph>
-  ),
-};
+  )},
+
+];
+
 
 export const AgencySelection = ({ image, title, description, ...props }) => {
   return (
@@ -63,9 +63,9 @@ export const AgencySelection = ({ image, title, description, ...props }) => {
           />
         </StyledImageContainer>
         <StyledContainerCard {...props}>
-          <CardComponent {...CardComponentProps1} />
-          <CardComponent {...CardComponentProps2} />
-          <StyledCardComponent {...CardComponentProps3} />
+         {CardComponentProps.map((props, index)=> (
+          <CardComponent key={index} {...props} />
+         ))}
         </StyledContainerCard>
       </StyledContainerSecondMain>
     </StyledContainerMain>
