@@ -9,7 +9,6 @@ import {
   StyledImageContainer,
   StyledContainerCard,
   StyledContainerSecondMain,
-  StyledCardComponent,
   StyledParagraph
 } from "./elements";
 
