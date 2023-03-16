@@ -11,6 +11,7 @@ export const StyledContainer = styled(({ height, ...props }) => (
   align-items: center;
   margin-bottom: 32px;
   background: #f7f7f7;
+  width: 65%;
 `;
 
 export const StyledTitleBold = styled((props) => (
