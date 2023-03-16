@@ -11,7 +11,6 @@ import {
 export const CardComponent = ({
   image,
   title,
-  titleStyleProps,
   description,
   ...props
 }) => {
@@ -21,7 +20,7 @@ export const CardComponent = ({
         <Image {...image} />
       </StyledImageContainer>
       <StyledTextContainer>
-        <StyledTitleBold titleStyleProps={titleStyleProps}>
+        <StyledTitleBold >
           {title}
         </StyledTitleBold>
         <StyledDescriptionSmall>{description}</StyledDescriptionSmall>

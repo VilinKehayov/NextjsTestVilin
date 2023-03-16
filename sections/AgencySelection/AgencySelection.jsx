@@ -9,7 +9,8 @@ import {
   StyledImageContainer,
   StyledContainerCard,
   StyledContainerSecondMain,
-  StyledParagraph
+  StyledParagraph,
+  StyledTitleColor
 } from "./elements";
 
 const CardComponentProps = [{
@@ -32,8 +33,7 @@ const CardComponentProps = [{
   )},
     {
   image: { src: "/img/card3img.png", alt: "", width: 65, height: 65 },
-  title: <u>Pitch</u>,
-  titleStyleProps: "color: #60baf6;",
+  title: <StyledTitleColor>Pitch</StyledTitleColor>,
   description: (
     <StyledParagraph>
       "Comprehensive <strong>pitch management</strong>, including comms, diary

@@ -90,3 +90,7 @@ export const StyledCardComponent = styled(CardComponent)`
 export const StyledParagraph = styled.p`
 margin: 0;
 `
+
+export const StyledTitleColor = styled.u`
+color: #60baf6;
+`
